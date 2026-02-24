@@ -1,5 +1,4 @@
-import resume from "../../public/assets/resume.pdf";
-
+ 
 export default function Header() {
     return (
         <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
@@ -19,7 +18,7 @@ export default function Header() {
                 </a>
 
                 <a
-  href={resume}
+  href='./assets/resume.pdf'
   target="_blank"
   className="px-10 py-2.5 rounded-full border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover flex items-center gap-2 bg-white dark:bg-transparent dark:text-white"
 >
