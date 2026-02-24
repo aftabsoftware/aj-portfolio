@@ -44,22 +44,25 @@ export default function Contact() {
   function CaptchaLoader() {
     const captchadiv = document.querySelectorAll('[data-captcha="true"]');
 
-    if (captchadiv.length) {
-      captchadiv.forEach(function (item) {
-        const sitekey = item.dataset.sitekey;
+   if (captchadiv.length) {
+  captchadiv.forEach(function (item) {
+    const sitekey = item.dataset.sitekey;
 
-        if (!sitekey) {
-          item.dataset.sitekey = "50b2fe65-b00b-4b9e-ad62-3ba471098be2";
-        }
-      });
-
-      const script = document.createElement("script");
-      script.src = "https://js.hcaptcha.com/1/api.js?recaptchacompat=off";
-      script.async = true;
-      script.defer = true;
-
-      document.body.appendChild(script);
+    if (!sitekey) {
+      item.dataset.sitekey = "0x4AAAAAAChRbDa8CsSnyce-";
     }
+
+    // Turnstile requires this class
+    item.classList.add("cf-turnstile");
+  });
+
+  const script = document.createElement("script");
+  script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
+  script.async = true;
+  script.defer = true;
+
+  document.body.appendChild(script);
+}
   }
 
   useEffect(() => {
