@@ -1,4 +1,4 @@
-# Eliana - React JS Portfolio Template
+# AJ - React JS Portfolio Template
 #### Preview
 
  - [Demo](https://themewagon.github.io/eliana-react/)
