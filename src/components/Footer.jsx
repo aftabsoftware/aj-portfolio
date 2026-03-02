@@ -11,13 +11,13 @@ export default function Footer() {
                     <img src="./assets/mail_icon.png" alt="" className="w-5 dark:hidden" />
                     <img src="./assets/mail_icon_dark.png" alt="" className="w-5 hidden dark:block" />
 
-                    <a href="mailto:contact@prebuiltui.com">aftasoftware888@gmail.com</a>
+                    <a href="mailto:aftasoftware888@gmail.com">aftasoftware888@gmail.com</a>
                 </div>
             </div>
             <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-3">
                 <p>© {new Date().getFullYear()} Aftab Jagirdar. All rights reserved.</p> <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
-                    <li><a href="https://www.instagram.com/aftab___jagirdar/">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/in/aftab-jagirdar-a31310276/">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/aftab___jagirdar/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/aftab-jagirdar-a31310276/" target="_blank">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
