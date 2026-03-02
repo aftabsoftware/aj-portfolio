@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aj-portoflio.netlify.app/sitemap.xml
